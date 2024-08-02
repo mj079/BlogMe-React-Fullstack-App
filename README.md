@@ -1,3 +1,7 @@
+# BlogMe
+
+BlogMe is a blogging web app which leverages Appwrite for storage and backend sevices.
+
 ## Installation:
 1. `nmp create vite@latest`
 3. `npm install @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tinymce-react html-react-parser react-hook-form`
