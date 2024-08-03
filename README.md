@@ -17,12 +17,10 @@ BlogMe is a blogging web app which leverages Appwrite for storage and backend se
 4. Give Permission for all roles(read, create...) in the settings section of the created collection.
 5. In the attributes section of your collection, create attributes and create indexes in indexes section .
 6. Create Bucket. Give Permission in settings.
-
 ## Configure ENV
 Create a file config.js in src/config/config.js, which holds the env as objects. 
 Ex: `const config = {`
     `appwriteUrl: String(import.meta.env.VITE_APPWRITE_URL), ... }`
-
 ## Authentication:
 ##### Building authentication service with Appwrite:
 1. src/appwrite/auth.
@@ -38,3 +36,6 @@ Ex: `const config = {`
 4. Functionalities such as createPost(), updatePost, updatePost, getPost are added to the above created class as methods.
 5. To get all posts we will use listDocuments() and pass `[Query.equal("status", "active")]` as its third argument to retrieve posts that are only active.
 6. Appwrite methods for file services: createFile(), deleteFile(), getFilePreview().
+## Redux:
+1. set up a store. (single source of truth)
+2. create slices(reducers), export actions.
