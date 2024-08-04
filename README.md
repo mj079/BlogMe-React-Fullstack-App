@@ -1,5 +1,5 @@
 # BlogMe
-BlogMe is a blogging web app which leverages Appwrite for storage and backend sevices. The documentation could serve as a reference to my future projects.
+BlogMe is a blogging web app which leverages Appwrite for storage and backend sevices. This documentation was intended to serve as a reference to my future projects.
 ## Installation
 1. `nmp create vite@latest`
 3. `npm install @reduxjs/toolkit react-redux react-router-dom appwrite @tinymce/tinymce-react html-react-parser react-hook-form`
@@ -46,4 +46,7 @@ name: "Login",
 slug: "/login",
 active: !authStatus,}`. useNavigate hook from react-router is used for routing.
 5. Now we create a reusable button component.
-6. Single Input component that is reused for all input operations. function is wrapped using forwardRef(), so that DOM nodes of Input component can be accessed by parent components.  
+6. Single Input component that is reused for all input operations. function is wrapped using forwardRef(), so that DOM nodes of Input component can be accessed by parent components.
+7. PostCard component
+8. Login.jsx: Use useForm() hook from react-hook-form to manage state and validation of Input(7.) component. Here is a detailed explaination of registers etc from useForm: [Notes](https://chatgpt.com/share/04612a4f-693f-4542-821c-9718161a0201)
+9. 
