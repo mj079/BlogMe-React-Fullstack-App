@@ -71,7 +71,7 @@ function Login() {
                     })}
                     />
                     <Button 
-                    children={"Sign in"}
+                    children={"Log in"}
                     type="submit"
                     className='w-full'
                     />
