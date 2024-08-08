@@ -1,5 +1,5 @@
 import config from "../config/config";
-import { Client, Databases, ID, Query, Storage } from "appwrite";
+import { Client, Databases, ID, Query, Storage as AppwriteStorage } from "appwrite";
 
 class Storage {
     client = new Client()
@@ -11,7 +11,7 @@ class Storage {
             .setEndpoint(config.appwriteUrl)
             .setProject(config.appwriteProjectId)
         this.database = new Databases(this.client)
-        this.bucket = new Storage(this.client)
+        this.bucket = new AppwriteStorage(this.client)
     }
 
     async createPost({title, slug, content, featuredImage, status, userId}) {

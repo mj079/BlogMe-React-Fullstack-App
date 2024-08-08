@@ -49,4 +49,8 @@ active: !authStatus,}`. useNavigate hook from react-router is used for routing.
 6. Single Input component that is reused for all input operations. function is wrapped using forwardRef(), so that DOM nodes of Input component can be accessed by parent components.
 7. PostCard component
 8. Login.jsx: Use useForm() hook from react-hook-form to manage state and validation of Input(7.) component. Here is a detailed explaination of registers etc from useForm: [Notes](https://chatgpt.com/share/04612a4f-693f-4542-821c-9718161a0201)
-9. 
+9. SignUp.jsx: Similar to 8. signup function handles authService.createAccount(data)
+10. AuthLayout: 
+11. RTE: Real time editor. the `<Editor/>` from tinymce is rendered in `render=(()=>())` of `<Controller/>` of react hook form.
+12. PostForm
+13. 

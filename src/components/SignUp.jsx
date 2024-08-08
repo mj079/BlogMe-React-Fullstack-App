@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { login } from '../store/authSlice'
-import { Input, Button, Logo } from './index'
+import { Input, Logo, Button } from './index'
 import { useDispatch } from 'react-redux'
 import authService from '../appwrite/auth'
 import { useForm } from 'react-hook-form'
@@ -77,11 +77,9 @@ function SignUp() {
                         required: true
                     })}
                     />
-                    <Button 
-                    children={"Sign up"}
-                    type="submit"
-                    className='w-full'
-                    />
+                    <Button type="submit" className="w-full">
+                            Create Account
+                    </Button>
                 </div>
             </form>
         </div>

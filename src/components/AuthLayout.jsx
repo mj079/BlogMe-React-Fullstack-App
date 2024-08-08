@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from "react-redux";
 
-export default function Protected({
+export default function AuthLayout({
     children,
     authentication = true
 }) {
